@@ -1,0 +1,130 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282a36;
+}
+
+.thunar-window {
+  background-color: #44475a;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 80%;
+  max-width: 1240px;
+  min-height: 500px;
+}
+
+.header {
+  color: #fff;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.header-window {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #1e1f29;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 1px solid #282a36;
+}
+
+.header-path {
+  display: grid;
+  grid-template-columns: 8% 88%;
+  align-items: center;
+  padding: .5rem 1rem;
+  background-color: #1e1f29;
+}
+
+.directory-path {
+  background-color: #282a36;
+  padding: .5rem 1rem;
+  width: 100%;
+}
+
+.file-manager {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  color: white;
+  min-height: 400px;
+}
+
+.sidebar {
+  background-color: #232530;
+  min-height: 400px;
+  padding: .5rem 1rem;
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list li {
+  padding: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-list .icon{
+  color: white;
+}
+
+.custom-list li:hover {
+  background-color: #333044;
+  color: #8269ad;
+}
+
+.main-content {
+  padding: 3rem;
+}
+
+.main-content > *  {
+  display: flex;
+  flex: row;
+  gap: 5rem;
+}
+
+.aboutModal {
+  display: none;
+  position: absolute;
+  background-color: #44475a;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+
+  top: 40%;
+  left: 30%;
+
+  max-width: 800px;
+  min-height: 100px;
+}
+
+.modal-content {
+  padding: 2rem;
+}
+
+.modal-text {
+  margin-bottom: 1rem;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 0.2em;
+  height: 1em;
+  background-color: white;
+  animation: blink 1s infinite;
+  margin-left: 3px;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
