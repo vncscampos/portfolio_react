@@ -1,0 +1,21 @@
+.modal-dialog, .modal-content {
+  background-color: #44475a;
+  border-radius: 0;
+  padding: 0;
+  border: 0;
+}
+
+.modal-header {
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1e1f29;
+    padding: 0.5rem 1.5rem;
+    border-bottom: 1px solid #282a36;
+}
+
+.modal-text, .modal-title{
+    color: white;
+    margin-bottom: .5rem;
+}

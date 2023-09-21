@@ -1,8 +1,11 @@
+import { useEffect, useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./App.css";
 
-import { useEffect, useState } from "react";
+
 import imgSobre from "./assets/about.svg";
 import imgVoltar from "./assets/back.svg";
 import imgClientes from "./assets/client.svg";
@@ -68,7 +71,7 @@ function App() {
           <div className="file-manager">
             <section className="sidebar">
               <ul className="custom-list">
-                <li style={currentPath === '' ? selectedPath : {}}>
+                <li style={currentPath === "" ? selectedPath : {}}>
                   <Link
                     style={{
                       display: "flex",
@@ -82,7 +85,7 @@ function App() {
                     <p>Main</p>
                   </Link>
                 </li>
-                <li style={currentPath === 'about' ? selectedPath : {}}>
+                <li style={currentPath === "about" ? selectedPath : {}}>
                   <Link
                     style={{
                       display: "flex",
@@ -96,7 +99,7 @@ function App() {
                     <p>About</p>
                   </Link>
                 </li>
-                <li style={currentPath === 'projects' ? selectedPath : {}}>
+                <li style={currentPath === "projects" ? selectedPath : {}}>
                   <Link
                     style={{
                       display: "flex",
@@ -110,7 +113,7 @@ function App() {
                     <p>Projects</p>
                   </Link>
                 </li>
-                <li style={currentPath === 'clients' ? selectedPath : {}}>
+                <li style={currentPath === "clients" ? selectedPath : {}}>
                   <Link
                     style={{
                       display: "flex",
@@ -124,7 +127,7 @@ function App() {
                     <p>Clients</p>
                   </Link>
                 </li>
-                <li style={currentPath === 'contacts' ? selectedPath : {}}>
+                <li style={currentPath === "contacts" ? selectedPath : {}}>
                   <Link
                     style={{
                       display: "flex",
